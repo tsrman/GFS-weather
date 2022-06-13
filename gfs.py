@@ -1,4 +1,3 @@
-import datetime as dt
 import sys
 from urllib import request
 import os
@@ -115,7 +114,7 @@ def rename_collection():
         return False
 
 def main(argv):
-    now = dt.datetime.utcnow()
+    now = datetime.datetime.utcnow()
     datestr = now.strftime('%Y%m%d')
     current_hour = int(now.strftime('%H'))
     data_hour = timetable[int(current_hour / 6)]
